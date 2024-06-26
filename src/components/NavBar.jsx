@@ -11,11 +11,12 @@ export default function NavBar() {
 
     return (
         <div className="bg-slate-900 flex justify-center items-center w-[100%]">
-            <div className='w-[71.5%] max-w-6xl h-20 flex justify-between items-center'>
+            <div className='w-[100%] sm:w-[80%] max-w-6xl h-20 flex 
+            justify-between items-center px-1 sm:px-10'>
                 <NavLink to={"/"}>
                     <img src={logoPath} alt="Logo" className='h-14' />
                 </NavLink>
-                <div className='flex text-slate-100 font-medium gap-x-6 mr-5'>
+                <div className='flex text-slate-100 font-medium gap-x-2 sm:gap-x-6 mr-5'>
                     <NavLink to={"/"}>
                         <p className='hover:text-green-400 
                         duration-300'>
