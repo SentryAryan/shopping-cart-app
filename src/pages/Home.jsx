@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <div className={`${posts.loading ? "flex  justify-center items-center" :
             "grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-7"}  
-            px-5 py-10 min-h-[100vh] max-w-6xl `}>
+            px-10 py-10 min-h-[100vh] max-w-6xl `}>
             {
                 posts.loading ? <Spinner /> : (
                     posts.items.map((post) => <Product key={post.id} post={post} />)
